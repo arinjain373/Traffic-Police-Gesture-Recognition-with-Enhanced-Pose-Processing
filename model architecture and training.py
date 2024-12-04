@@ -42,7 +42,7 @@ class TrafficGestureClassifier:
     def _build_model(self):
         """Build the complete model architecture"""
         # Load VGG16 as feature extractor
-        base_model = ResNet50(weights='imagenet', include_top=False, 
+        base_model = VGG16(weights='imagenet', include_top=False, 
                           input_shape=self.input_shape)
         
         # Freeze early layers
@@ -169,7 +169,7 @@ def plot_training_history(history):
     ax2.legend()
     
     plt.tight_layout()
-    plt.savefig('cpm_claude_graph_resnet50.png')
+    plt.savefig('cpm_vgg16.png')
 
 def plot_confusion_matrix(model, test_generator, class_names):
     """Plot confusion matrix"""
@@ -192,7 +192,7 @@ def plot_confusion_matrix(model, test_generator, class_names):
     plt.xticks(rotation=45)
     plt.yticks(rotation=45)
     plt.tight_layout()
-    plt.savefig('cpm_cm_claude_resnet50.png')
+    plt.savefig('cpm_cm_vgg16.png')
 
 def main():
     # Define paths
@@ -223,7 +223,7 @@ def main():
     plot_confusion_matrix(classifier.model, test_generator, class_names)
     
     # Save model
-    classifier.model.save('traffic_gesture_classifier_claude_resnet50.h5')
+    classifier.model.save('traffic_gesture_classifier_cpm_vgg16.h5')
 
 if __name__ == "__main__":
     main()
