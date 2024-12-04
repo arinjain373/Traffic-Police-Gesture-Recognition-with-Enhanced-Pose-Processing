@@ -32,8 +32,12 @@ This project focuses on recognizing traffic police gestures using pose estimatio
 2. CPM-inspired VGG16 effectively balances training and test accuracy, reducing overfitting while maintaining competitive performance.
 
 ## Visualizations
-- **Confusion Matrix**: ![cpm_cm_VGG16.png](cpm_cm_VGG16.png)
-- **Training Graph**: ![cpm_graph_VGG16.png](cpm_graph_VGG16.png)
+- **Confusion Matrix CPM-Inspired VGG16**: ![cpm_cm_VGG16.png](cpm_cm_VGG16.png)
+- **Training Graph CPM-Inspired VGG16**: ![cpm_graph_VGG16.png](cpm_graph_VGG16.png)
+- **Training Graph Vanila VGG16 4 Layer trained**: ![vanila_vgg16_4_layer_train.png](vanila_vgg16_4_layer_train.png)
+- **Training Graph Vanila VGG16 8 Layer trained**: ![vanila_vgg16_8_layer_train.png](vanila_vgg16_8_layer_train.png)
+- **Training Graph Vanila Resnet50 4 Layer trained**: ![vanila_resnet50_4_layer_train.png](vanila_resnet50_4_layer_train.png)
+- **Training Graph Vanila Resnet50 8 Layer trained**: ![vanila_resnet50_8_layer_train.png](vanila_resnet50_8_layer_train.png)
 
 
 
